@@ -531,4 +531,4 @@ class Call(PyTgCalls):
                     ]:
                         await self.stop_stream(update.chat_id)
 
-Sona = Call()
+Sona  = Call()
