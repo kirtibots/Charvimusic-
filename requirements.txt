@@ -56,3 +56,4 @@ bing_image_downloader
 googlesearch-python
 sympy
 PyGithub
+ntgcalls>=1.3.3
