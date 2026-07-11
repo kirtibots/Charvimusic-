@@ -21,9 +21,9 @@ from pyrogram.types import InlineKeyboardMarkup
 from pytgcalls import PyTgCalls, exceptions, types
 from pytgcalls.pytgcalls_session import PyTgCallsSession
 import config
-from AarumiMusic import LOGGER, YouTube, app
-from AarumiMusic.misc import db
-from AarumiMusic.utils.database import (
+from REVANGEMUSIC import LOGGER, YouTube, app
+from REVANGEMUSIC.misc import db
+from REVANGEMUSIC.utils.database import (
     add_active_chat,
     add_active_video_chat,
     get_lang,
@@ -35,11 +35,11 @@ from AarumiMusic.utils.database import (
     remove_active_video_chat,
     set_loop,
 )
-from AarumiMusic.utils.exceptions import AssistantErr
-from AarumiMusic.utils.formatters import check_duration, seconds_to_min, speed_converter
-from AarumiMusic.utils.inline.play import stream_markup
-from AarumiMusic.utils.stream.autoclear import auto_clean
-from AarumiMusic.utils.thumbnails import get_thumb as gen_thumb
+from REVANGEMUSIC.utils.exceptions import AssistantErr
+from REVANGEMUSIC.utils.formatters import check_duration, seconds_to_min, speed_converter
+from REVANGEMUSIC.utils.inline.play import stream_markup
+from REVANGEMUSIC.utils.stream.autoclear import auto_clean
+from REVANGEMUSIC.utils.thumbnails import get_thumb as gen_thumb
 from strings import get_string
 
 autoend = {}
@@ -55,7 +55,7 @@ class Call(PyTgCalls):
         PyTgCallsSession.notice_displayed = True
 
         self.userbot1 = Client(
-            name="AarumiAss1",
+            name="SonaAss1",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             session_string=str(config.STRING1),
@@ -63,7 +63,7 @@ class Call(PyTgCalls):
         self.one = PyTgCalls(self.userbot1, cache_duration=100)
 
         self.userbot2 = Client(
-            name="AarumiAss2",
+            name="SonaAss2",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             session_string=str(config.STRING2),
@@ -71,7 +71,7 @@ class Call(PyTgCalls):
         self.two = PyTgCalls(self.userbot2, cache_duration=100)
 
         self.userbot3 = Client(
-            name="AarumiAss3",
+            name="SonaAss3",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             session_string=str(config.STRING3),
@@ -79,7 +79,7 @@ class Call(PyTgCalls):
         self.three = PyTgCalls(self.userbot3, cache_duration=100)
 
         self.userbot4 = Client(
-            name="AarumiAss4",
+            name="SonaAss4",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             session_string=str(config.STRING4),
@@ -87,7 +87,7 @@ class Call(PyTgCalls):
         self.four = PyTgCalls(self.userbot4, cache_duration=100)
 
         self.userbot5 = Client(
-            name="AarumiAss5",
+            name="SonaAss5",
             api_id=config.API_ID,
             api_hash=config.API_HASH,
             session_string=str(config.STRING5),
@@ -531,4 +531,4 @@ class Call(PyTgCalls):
                     ]:
                         await self.stop_stream(update.chat_id)
 
-Aarumi = Call()
+Sona = Call()
