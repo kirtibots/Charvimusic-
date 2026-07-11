@@ -99,7 +99,7 @@ class Call(PyTgCalls):
         source: str,
         video: bool,
         ffmpeg: str | None = None,
-    ) -> types.MediaStream:
+     ) -> types.MediaStream:
         return types.MediaStream(
             media_path=source,
             audio_parameters=types.AudioQuality.HIGH,
