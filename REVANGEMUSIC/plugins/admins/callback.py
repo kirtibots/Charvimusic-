@@ -7,7 +7,7 @@
 # =======================================================
 
 import asyncio
-from telegram import InlineKeyboardButton, InlineKeyboardMarkup
+from telegram import CallbackQuery
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
