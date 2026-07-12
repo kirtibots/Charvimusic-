@@ -7,9 +7,8 @@
 # =======================================================
 
 import asyncio
-from telegram import CallbackQuery
 from pyrogram import filters
-from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
+from pyrogram.types import CallbackQuery, InlineKeyboardButton, InlineKeyboardMarkup
 
 from REVANGEMUSIC import YouTube, app
 from REVANGEMUSIC.core.call import Sona
