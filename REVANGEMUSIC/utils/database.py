@@ -11,8 +11,8 @@
 import random
 from typing import Dict, List, Union
 
-from ShiviMusic import userbot
-from ShiviMusic.core.mongo import mongodb
+from REVANGEMUSIC import userbot
+from REVANGEMUSIC.core.mongo import mongodb
 
 authdb = mongodb.adminauth
 authuserdb = mongodb.authuser
