@@ -6,19 +6,6 @@
 # 📢 Telegram channel : t.me/dmcatelegram
 # =======================================================
 
-import asyncio
-from contextlib import suppress
-from string import ascii_lowercase
-from typing import Dict, Union
-
-from pyrogram import filters, enums
-from pyrogram.enums import ChatMembersFilter
-from pyrogram.types import (
-    CallbackQuery,
-    Message,
-)
-
-from REVANGEMUSIC import app
 from REVANGEMUSIC.misc import SUDOERS
 from REVANGEMUSIC.core.mongo import mongodb
 from REVANGEMUSIC.utils.errors import capture_err
